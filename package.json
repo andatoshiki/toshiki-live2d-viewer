@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "node scripts/postbuild.js && gh-pages -d dist"
-    "vercel": "node scripts/download.js && node scripts/parse.js && yarn build"
+    "deploy": "node scripts/postbuild.js && gh-pages -d dist",
+    "vercel": "node scripts/download.js && node scripts/parse.js && vue-cli-service build"
   },
   "main": "index.js",
   "dependencies": {
