@@ -15,7 +15,7 @@ jobs:
           yarn install
           node scripts/download.js
           node scripts/parse.js
-          yarn deploy
+          yarn build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
