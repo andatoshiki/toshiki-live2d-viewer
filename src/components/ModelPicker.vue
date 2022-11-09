@@ -44,7 +44,7 @@
 
       <v-card-actions>
         <span class="text--secondary text-caption">The listed models were scraped from <a target="_blank"
-                                                                             href="https://github.com/Eikanya/Live2d-model">Eikanya/Live2d-model</a>.
+                                                                             href="https://github.com/andatoshiki/toshiki-live2d">andatoshiki/toshiki-live2d</a>.
           All credit goes to their respective creators.</span>
       </v-card-actions>
     </v-card>
