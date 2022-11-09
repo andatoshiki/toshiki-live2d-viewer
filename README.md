@@ -1,5 +1,9 @@
 # 俊樹のlive2d web viewer
 
+[![Build and Deploy](https://github.com/andatoshiki/toshiki-live2d-viewer/actions/workflows/build.yml/badge.svg)](https://github.com/andatoshiki/toshiki-live2d-viewer/actions/workflows/build.yml)
+
+[![pages-build-deployment](https://github.com/andatoshiki/toshiki-live2d-viewer/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/andatoshiki/toshiki-live2d-viewer/actions/workflows/pages/pages-build-deployment)
+
 ## Installation
 
 ```sh
