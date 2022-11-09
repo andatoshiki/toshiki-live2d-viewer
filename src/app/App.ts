@@ -1,19 +1,19 @@
 import { ModelEntity } from './ModelEntity';
 import { ExtendedFileList, SoundManager } from 'pixi-live2d-display';
 import { save } from '@/utils/storage';
-// import Stats from 'stats.js';
+import Stats from 'stats.js';
 import { PixiApp } from '@/app/PixiApp';
 import { Live2DModel } from '@/app/Live2DModel';
 
-// const stats = new Stats();
-// stats.showPanel(0);
-// stats.dom.style.left = '';
-// stats.dom.style.right = '0';
+const stats = new Stats();
+stats.showPanel(0);
+stats.dom.style.display = 'none';
+stats.dom.style.display = 'none';
 
 export class App {
     static models: ModelEntity[] = [];
 
-    static pixiApp = new PixiApp();
+    static pixiApp = new PixiApp(stats);
 
     private static _volume = SoundManager.volume;
     private static _showHitAreaFrames = false;
@@ -62,16 +62,16 @@ export class App {
         }
     }
 
-    // @save('stats')
-    // static set showStats(value: boolean) {
-    //     this._showStats = value;
+    @save('stats')
+    static set showStats(value: boolean) {
+        this._showStats = value;
 
-    //     if (value) {
-    //         document.body.appendChild(stats.dom);
-    //     } else {
-    //         stats.dom.parentElement?.removeChild(stats.dom);
-    //     }
-    // }
+        if (value) {
+            document.body.appendChild(stats.dom);
+        } else {
+            stats.dom.parentElement?.removeChild(stats.dom);
+        }
+    }
 
     static get showStats(): boolean {
         return this._showStats;
