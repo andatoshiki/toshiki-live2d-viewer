@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build Live2d viewer web viewer
 on: [push]
 permissions:
   contents: write
@@ -7,17 +7,17 @@ jobs:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Perform check out
         uses: actions/checkout@v3
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Install dependencies and build/compile the site # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
           yarn install
           node scripts/download.js
           node scripts/parse.js
           yarn build
 
-      - name: Deploy 🚀
+      - name: Deploy builds to github pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # The folder the action should deploy.
