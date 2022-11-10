@@ -3179,6 +3179,25 @@
         ]
       },
       {
+        "name": "vtb",
+        "children": [
+          {
+            "name": "Ava",
+            "files": [
+              "Ava.model3.json",
+              "raw.model3.json"
+            ]
+          },
+          {
+            "name": "Diana",
+            "files": [
+              "Diana.model3.json",
+              "raw.model3.json"
+            ]
+          }
+        ]
+      },
+      {
         "name": "アンノウンブライド（Unknow Brige）",
         "files": [
           "c_3223/__data_092.model3.json",
