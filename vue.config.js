@@ -24,7 +24,7 @@ module.exports = {
         });
 
         config.plugin('html').tap((args) => {
-            args[0].title = 'Live2D Viewer Online';
+            args[0].title = '俊樹 | Live2d Viewer';
 
             return args;
         });

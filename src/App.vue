@@ -2,7 +2,7 @@
   <v-app>
     <v-navigation-drawer absolute stateless :width="drawerWidth" v-model="drawer" @transitionend="!drawer && (drawerSwitch=true)">
       <v-toolbar color="primary">
-        <v-toolbar-title>Live2D Viewer</v-toolbar-title>
+        <v-toolbar-title>俊樹のLive2d Viewer</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn-toggle group rounded v-model="tab">
           <v-btn icon>
