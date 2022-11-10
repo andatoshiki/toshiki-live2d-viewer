@@ -14,7 +14,7 @@ export interface TreeNode {
 
 let uid = 0;
 
-const JSDELIVR_PREFIX = 'https://cdn.jsdelivr.net/gh/';
+const JSDELIVR_PREFIX = 'https://jsd.toshiki.dev/gh/';
 
 const tasks = new Map<TreeNode, Promise<void>>();
 
@@ -96,7 +96,7 @@ export function getFileURL(folder: TreeNode, file: string): string | undefined {
 /**
  * Converts the jsDelivr URL to GitHub's raw URL.
  * 
- * - `https://cdn.jsdelivr.net/gh/<repo>/<file>`
+ * - `https://jsd.toshiki.dev/gh/<repo>/<file>`
  * - `https://raw.githubusercontent.com/<repo>/master/<file>`
  */
 export function getAlternativeURL(url: string): string {
