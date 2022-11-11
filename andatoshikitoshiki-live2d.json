@@ -1926,6 +1926,15 @@
           "加藤惠live2d.zip",
           "康纳live2d.zip",
           "纱雾live2d.zip"
+        ],
+        "children": [
+          {
+            "name": "ywz",
+            "files": [
+              "items_pinned_to_model.json",
+              "yanwenzi.model3.json"
+            ]
+          }
         ]
       },
       {
