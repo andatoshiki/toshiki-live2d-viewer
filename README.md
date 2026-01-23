@@ -4,7 +4,7 @@
 
 [![pages-build-deployment](https://github.com/andatoshiki/toshiki-live2d-viewer/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/andatoshiki/toshiki-live2d-viewer/actions/workflows/pages/pages-build-deployment)
 
-> Data settings (`model.json`) and models are directly scraped off from [andatoshiki/toshiki-live2d](github.com/andatoshiki/toshiki-live2d)
+> Data settings (`model.json`) and models are directly scraped off from [andatoshiki/toshiki-live2d](https://github.com/andatoshiki/toshiki-live2d)
 
 ## Installation
 
